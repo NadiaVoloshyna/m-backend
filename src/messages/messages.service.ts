@@ -77,7 +77,7 @@ export class MessagesService {
       );
     } 
     if (!messages.length) {
-      throw new HttpException('Messages matching your search not found', HttpStatus.NO_CONTENT);
+      throw new HttpException('MESSAGES matching your search not found', HttpStatus.NO_CONTENT);
     }
     return messages;
   }
